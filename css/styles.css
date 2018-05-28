@@ -1,3 +1,122 @@
-h1 {
-    color: red;
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    background-color: #F5F6F6;
+    display: flex;
+    justify-content: center;
+}
+
+.auth-form-wrapper {
+    padding-top: 40px;
+    width: 445px;
+    display: inline-block;
+}
+
+.auth-content {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.logo-text {
+    margin-left: 20px;
+    color:#3A4851;
+}
+
+.auth-form {
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
+}
+
+.auth-form-inputs {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.auth-form-title {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.auth-form {
+    padding: 45px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-input {
+    width: 80%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.auth-input::placeholder {
+    color: #757575;
+    font-size: 0.9rem;
+}
+
+.input-icon {
+    width: 15%;
+    align-self: center;
+}
+
+.auth-form-input-wrapper {
+    height: 50px;
+    display: flex;
+}
+
+.auth-form-forgotten,
+.login-btn,
+.signup,
+.auth-form-input-wrapper {
+    margin-top: 25px;
+}
+
+.login-btn {
+    text-transform: uppercase;
+    background-color: #2198E7;
+    color: white;
+    border: none;
+}
+
+.blue-btn {
+    width: 75%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.greys {
+    color: #757575; 
+}
+
+@media (max-width: 480px) {
+    .input-icon {
+        display: none !important;
+    }
+
+    .auth-form-wrapper {
+        width: 90%;
+    }
+
+    .auth-form {
+        padding: 20px 25px;
+    }
 }

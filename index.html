@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
     <script src="scripts/index.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>hello</h1>
+    <main class="wrapper">
+        <section class="auth-content">
+            <a href="#" class="logo-wrapper">
+                <img src="./images/logo.png" alt="budget Buddy" class="logo-img">
+                <h1 class="logo-text">Budget Buddy</h1>
+            </a>
+            <div class="auth-form-wrapper">
+                <div class="auth-form">
+                    <h2 class="auth-form-title">Log in to Budget Buddy</h2>
+
+                    <div class="auth-form-inputs">
+                        <div class="auth-form-input-wrapper">
+                           <i class="fa fa-envelope input-icon"></i>
+                            <input type="text" class="auth-input" placeholder="email">
+                        </div>
+                        <div class="auth-form-input-wrapper">
+                           <i class="fa fa-unlock input-icon"></i>
+                            <input name="aaa" class="auth-input" placeholder="password" type="password">
+                        </div>
+                    </div>
+
+                    <a href="#" class="auth-form-forgotten">Forgot password?</a>
+                    <button class="blue-btn login-btn">log in</button>
+                    <span class="signup greys">Don't have an account?
+                        <a href="#" class="signup">Sign up</a>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
