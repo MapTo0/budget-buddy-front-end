@@ -137,4 +137,8 @@ html, body {
     .auth-form {
         padding: 20px 25px;
     }
+
+    .auth-form-validator-input-wrapper {
+        width: 100%;
+    }
 }
