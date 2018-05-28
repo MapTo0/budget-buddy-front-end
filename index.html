@@ -7,16 +7,16 @@
     <title>Budget Buddy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
-    <script src="scripts/index.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="scripts/index.js"></script>
 </head>
 
 <body>
@@ -31,20 +31,36 @@
                     <h2 class="auth-form-title">Log in to Budget Buddy</h2>
 
                     <div class="auth-form-inputs">
+                        <div class="auth-form-input-wrapper hidden" id="auth-form-name-input">
+                            <i class="fa fa-user input-icon"></i>
+                            <input type="text" class="auth-input" placeholder="name">
+                        </div>
                         <div class="auth-form-input-wrapper">
                            <i class="fa fa-envelope input-icon"></i>
-                            <input type="text" class="auth-input" placeholder="email">
+                           <div class="auth-form-validator-input-wrapper">
+                                <span id="email-validator" class="validator hidden">Please provide a valid email address.</span>
+                               <input id="auth-form-email-input" type="email" class="auth-input" placeholder="email">
+                           </div>
                         </div>
                         <div class="auth-form-input-wrapper">
                            <i class="fa fa-unlock input-icon"></i>
-                            <input name="aaa" class="auth-input" placeholder="password" type="password">
+                            <div class="auth-form-validator-input-wrapper">
+                                <span id="password-validator" class="validator hidden">Should be at least 6 characters long.</span>
+                                <input name="aaa" id="auth-form-password-input" class="auth-input" placeholder="password" type="password">
+                            </div>
                         </div>
                     </div>
 
-                    <a href="#" class="auth-form-forgotten">Forgot password?</a>
-                    <button class="blue-btn login-btn">log in</button>
-                    <span class="signup greys">Don't have an account?
-                        <a href="#" class="signup">Sign up</a>
+                    <a href="#" id="auth-form-forgotten-pass" class="auth-form-forgotten">Forgot password?</a>
+                    <button id="sign-in-button" class="blue-btn login-btn">log in</button>
+                    <button id="sign-up-button" class="blue-btn login-btn hidden">Sign up</button>
+
+                    <span id="signup-info" class="signup greys sign">Don't have an account?
+                        <a data-signup="true" href="#" id="signup">Sign up</a>
+                    </span>
+
+                    <span id="signin-info" class="signin greys hidden sign">Already have an account?
+                        <a id="signin" href="#">Log in</a>
                     </span>
                 </div>
             </div>

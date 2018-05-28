@@ -45,7 +45,6 @@ html, body {
 
 .auth-form-inputs {
     width: 100%;
-    margin-top: 60px;
 }
 
 .auth-form-title {
@@ -61,7 +60,8 @@ html, body {
 }
 
 .auth-input {
-    width: 80%;
+    height: 36px;
+    width: 100%;
     box-sizing: border-box;
     border: none;
     border-bottom: 1px solid black;
@@ -85,7 +85,7 @@ html, body {
 
 .auth-form-forgotten,
 .login-btn,
-.signup,
+.sign,
 .auth-form-input-wrapper {
     margin-top: 25px;
 }
@@ -95,6 +95,7 @@ html, body {
     background-color: #2198E7;
     color: white;
     border: none;
+    outline: none;
 }
 
 .blue-btn {
@@ -105,6 +106,23 @@ html, body {
 
 .greys {
     color: #757575; 
+}
+
+.hidden {
+    display: none;
+}
+
+.validator {
+    font-size: 0.8rem;
+    color: red;
+}
+
+.auth-form-validator-input-wrapper {
+    width: 80%;
+}
+
+.validator:not(.hidden) ~ input {
+    border-bottom: 1px solid red;
 }
 
 @media (max-width: 480px) {
